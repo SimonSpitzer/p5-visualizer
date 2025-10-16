@@ -1,7 +1,7 @@
 let mic, fft;
 let circles = [];
 let nextCircleTime = 0;
-let maxCircles = 12;
+let maxCircles = 12; 
 
 let palette = [
   [0, 178, 238],
@@ -32,7 +32,7 @@ function draw() {
 
   // neuen Kreis spawnen
   if (millis() > nextCircleTime && circles.length < maxCircles) {
-    let c1 = random(palette);
+    let c1 =  random(palette);
     let c2 = random(palette);
     circles.push({
       r: 0,
